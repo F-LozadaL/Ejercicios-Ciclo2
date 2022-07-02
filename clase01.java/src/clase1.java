@@ -1,11 +1,7 @@
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.annotation.processing.SupportedOptions;
-import javax.management.openmbean.OpenDataException;
-
-public class App {
+public class clase1 {
 
     // Scanner sc = new Scanner(System.in);
     // int num=sc.nextInt();
@@ -248,11 +244,11 @@ public class App {
         } else if (edad < 30) {
             System.out.println("No hay bonificacion");
         } else if (edad < 51) {
-            System.out.println("Su bonificacion es de: $" + salario * 0.05);
+            System.out.println("La bonificacion de "+nombre+" es de: $" + salario * 0.05);
         } else if (edad < 61) {
-            System.out.println("Su bonificacion es de: $" + salario * 0.1);
+            System.out.println("La bonificacion de "+nombre+" es de: $" + salario * 0.1);
         } else {
-            System.out.println("Su bonificacion es de: $" + salario * 0.15);
+            System.out.println("La bonificacion de "+nombre+" es de: $" + salario * 0.15);
         }
         sc.close();
     }
@@ -286,6 +282,10 @@ public class App {
         sc.close();
     }
 
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
@@ -337,7 +337,8 @@ public class App {
             case 15:
                 eje15();
                 break;
-
+            
         }
+        sc.close();
     }
 }
