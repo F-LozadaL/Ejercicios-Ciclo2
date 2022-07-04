@@ -178,7 +178,6 @@ public class clase2 {
         System.out.print("Ingre segundos>> ");
         int seg = sc.nextInt();
 
-        boolean valido=false;
 
         if (hora > -1 && hora < 23) {
             if (min > -1 && min < 60) {
@@ -304,6 +303,6 @@ public class clase2 {
 
 
     public static void main(String[] args) throws Exception {
-        eje16();
+        
     }
 }
